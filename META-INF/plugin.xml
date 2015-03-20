@@ -68,7 +68,11 @@
   </project-components>
 
   <actions>
-    <!-- Add your actions here -->
+      <group id="AndroidToolbox.GenerateAndroidCodeGroup" text="Generate Android Code..." popup="true"
+             class="de.schramke.idea.android.toolbox.actions.AndroidLayoutCodeGeneratorGroup">
+          <add-to-group group-id="ProjectViewPopupMenu" anchor="after"
+                        relative-to-action="AddFrameworkSupport"/>
+      </group>
   </actions>
 
 </idea-plugin> 
